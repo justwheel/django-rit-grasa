@@ -85,7 +85,7 @@ def start(port_number):
     results = cmd_run("docker ps")
     checkResults(results)
     if containerName in results[1]:
-        print("Sucessfully started the container.")
+        print("Successfully started the container.")
     else:
         print("Could not start the container.  Please investigate.")
 
@@ -98,7 +98,7 @@ def stop():
     results = cmd_run("docker ps")
     checkResults(results)
     if containerName not in results[1]:
-        print("Sucessfully stopped the container.")
+        print("Successfully stopped the container.")
     else:
         print("Could not stop the container.  Please investigate.")
 
